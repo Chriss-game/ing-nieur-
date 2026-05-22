@@ -10,7 +10,7 @@
   <!-- Barre de navigation -->
   <header>
     <nav class="navbar">
-      <h1 class="logo">MonPortfolio</h1>
+      <h1 class="logo">Mon Profil</h1>
       <ul class="nav-links">
         <li><a href="#accueil">Accueil</a></li>
         <li><a href="#apropos">À propos</a></li>
@@ -25,7 +25,7 @@
   <!-- Section Héro -->
   <section id="accueil" class="hero">
     <div class="hero-content">
-      <h2>Bonjour, je suis <span>[Ton Nom]</span></h2>
+      <h2>Bonjour, je suis <span>SAINT LAURENT Chrismy</span></h2>
       <p>Ingénieur en Informatique | Spécialiste en Développement Full-Stack</p>
       <p>"Je conçois et développe des solutions logicielles robustes et scalables."</p>
       <div class="cta">
@@ -37,9 +37,9 @@
 
   <!-- À propos -->
   <section id="apropos" class="section">
-    <h2>À propos</h2>
+    <h2>À propos de moi</h2>
     <p>Passionné par l’innovation technologique et la résolution de problèmes complexes, 
-       je suis ingénieur en informatique diplômé de [Université]. 
+       je suis ingénieur en informatique diplômé de Université Chretienne da la Caummunauté de Caiman. 
        Curieux et rigoureux, j’aime transformer des besoins métiers en lignes de code performantes.</p>
   </section>
 
@@ -47,9 +47,9 @@
   <section id="competences" class="section">
     <h2>Compétences Techniques</h2>
     <div class="skills-grid">
-      <div><strong>Langages :</strong> Java, Python, JavaScript, C++, SQL</div>
-      <div><strong>Frameworks :</strong> Spring Boot, Django, React, JavaFX</div>
-      <div><strong>Cloud & DevOps :</strong> Docker, AWS, Git, CI/CD, Kubernetes</div>
+      <div><strong>Langages :</strong> Java, Python, C++, SQL</div>
+      <div><strong>Frameworks :</strong> Flutter, React, JavaFX</div>
+      <div><strong>Cloud & DevOps :</strong> Git</div>
       <div><strong>Méthodologies :</strong> Agile, Microservices, Tests unitaires</div>
     </div>
   </section>
@@ -73,9 +73,9 @@
   <section id="experience" class="section">
     <h2>Expériences</h2>
     <ul class="timeline">
-      <li><strong>2026 - Ingénieur Logiciel</strong> chez [Entreprise] – Missions clés et accomplissements.</li>
-      <li><strong>2024 - Stage</strong> chez [Entreprise] – Développement d’applications web.</li>
-      <li><strong>Diplôme</strong> : Master en Informatique – [Université]</li>
+      <li><strong>2026 - Ingénieur Logiciel</strong> chez Natcom – Missions clés et accomplissements.</li>
+      <li><strong>2024 - Stage</strong> chez BNC – Développement d’applications web.</li>
+      <li><strong>Diplôme</strong> : Licence en Informatique – Université Chrétienne de la Communauté de Caiman </li>
     </ul>
   </section>
 
@@ -90,13 +90,13 @@
       <button type="submit">Envoyer</button>
     </form>
     <div class="socials">
-      <a href="#">LinkedIn</a> | <a href="#">GitHub</a> | <a href="mailto:email@example.com">Email</a>
+      <a href="#">LinkedIn</a> | <a href="#">GitHub</a> | <a href="mailto:saintlaurentchrismy@gmail.com">Email</a>
     </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>© 2026 [Ton Nom]. Tous droits réservés.</p>
+    <p>© 2026 SAINT LAURENT Chrismy. Tous droits réservés.</p>
   </footer>
 </body>
 
@@ -104,7 +104,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #121212;
+  background-color: #3f6bef;
   color: #f0f0f0;
 }
 
