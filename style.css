@@ -1,8 +1,8 @@
-<style>
+/* 🌐 Styles généraux */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #3f6bef;
+  background-color: #121212;
   color: #f0f0f0;
 }
 
@@ -14,6 +14,12 @@ body {
   position: fixed;
   width: 100%;
   top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-weight: bold;
+  color: #00e0ff;
 }
 
 .nav-links {
@@ -28,20 +34,31 @@ body {
 }
 
 .hero {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding: 2rem;
+}
+
+.hero-content h2 {
+  font-size: 2rem;
 }
 
 .btn {
   background: #00e0ff;
   color: #121212;
-  padding: 0.5rem 1rem;
+  padding: 0.6rem 1.2rem;
   margin: 0.5rem;
   text-decoration: none;
   border-radius: 5px;
+  display: inline-block;
+}
+
+.btn:hover {
+  background: #00ff88;
+  transition: 0.3s;
 }
 
 .section {
@@ -57,11 +74,31 @@ body {
   background: #1e1e1e;
   padding: 1rem;
   border-radius: 8px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0,224,255,0.5);
 }
 
 .timeline {
   list-style: none;
   padding: 0;
+}
+
+.timeline li {
+  margin: 1rem 0;
+  position: relative;
+  padding-left: 20px;
+}
+
+.timeline li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #00e0ff;
+  font-size: 1.5rem;
 }
 
 /* 🎨 Contact Section */
@@ -119,4 +156,52 @@ body {
 .socials a:hover {
   color: #00ff88;
 }
-</style>
+
+/* 📱 Responsive pour mobile */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0;
+  }
+
+  .hero {
+    padding: 4rem 1rem;
+  }
+
+  .hero-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+  }
+
+  .cta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: center;
+  }
+
+  .btn {
+    width: 80%;
+    text-align: center;
+  }
+
+  .section {
+    padding: 2rem 1rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+  }
+}
