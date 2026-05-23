@@ -231,17 +231,60 @@ body {
   cursor: pointer;
 }
 
+/* 🌐 Barre de navigation */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background: #1e1e1e;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo */
+.logo {
+  font-weight: bold;
+  color: #00e0ff;
+  font-size: 1.3rem;
+}
+
+/* Menu hamburger */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  color: #00e0ff;
+  cursor: pointer;
+  margin-right: 0.5rem; /* ✅ espace entre le bord et le bouton */
+}
+
+/* Liens du menu */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: #00e0ff;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.3rem 0.5rem;
+}
+
+.nav-links a:hover {
+  color: #00ff88;
+  transition: 0.3s;
+}
+
 /* 📱 Mode mobile */
 @media (max-width: 768px) {
-  .navbar {
-    flex-direction: row; /* ✅ logo à gauche, menu à droite */
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 1.5rem;
-  }
-
   .menu-toggle {
-    display: block; /* ✅ affiche le bouton hamburger */
+    display: block; /* ✅ affiche le bouton ☰ */
   }
 
   .nav-links {
@@ -251,7 +294,7 @@ body {
     background: #1e1e1e;
     text-align: center;
     padding: 1rem 0;
-    animation: fadeIn 0.3s ease-in-out; /* ✅ animation fluide */
+    animation: fadeIn 0.3s ease-in-out;
   }
 
   .nav-links.show {
@@ -264,7 +307,7 @@ body {
   }
 }
 
-/* ✨ Animation d’apparition du menu */
+/* ✨ Animation fluide */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -280,3 +323,4 @@ body {
 .hero {
   padding-top: 7rem;
 }
+
