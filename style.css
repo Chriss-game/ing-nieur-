@@ -6,10 +6,12 @@ body {
   color: #f0f0f0;
 }
 
+/* Barre de navigation */
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
+  align-items: center;
+  padding: 1.2rem 2rem; /* plus d’espace autour */
   background: #1e1e1e;
   position: fixed;
   width: 100%;
@@ -22,17 +24,28 @@ body {
   color: #00e0ff;
 }
 
+/* Liens du menu */
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem; /* espace entre les liens */
+  margin: 0;
+  padding: 0;
 }
 
 .nav-links a {
   color: #00e0ff;
   text-decoration: none;
+  font-weight: 500;
+  padding: 0.3rem 0.5rem; /* espace interne pour respirer */
 }
 
+.nav-links a:hover {
+  color: #00ff88;
+  transition: 0.3s;
+}
+
+/* Section héro */
 .hero {
   min-height: 100vh;
   display: flex;
@@ -40,6 +53,7 @@ body {
   justify-content: center;
   text-align: center;
   padding: 2rem;
+  padding-top: 6rem; /* espace sous la navbar */
 }
 
 .hero-content h2 {
@@ -61,15 +75,18 @@ body {
   transition: 0.3s;
 }
 
+/* Sections générales */
 .section {
   padding: 4rem 2rem;
 }
 
+/* Grilles */
 .skills-grid, .projects-grid {
   display: grid;
   gap: 1rem;
 }
 
+/* Cartes projets */
 .card {
   background: #1e1e1e;
   padding: 1rem;
@@ -82,6 +99,7 @@ body {
   box-shadow: 0 0 15px rgba(0,224,255,0.5);
 }
 
+/* Timeline */
 .timeline {
   list-style: none;
   padding: 0;
