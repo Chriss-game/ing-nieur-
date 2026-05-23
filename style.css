@@ -17,7 +17,7 @@ body {
   width: 100%;
   top: 0;
   z-index: 1000;
-  margin: 1rem;
+  margin: 0;
 }
 
 .logo {
@@ -38,7 +38,7 @@ body {
   color: #00e0ff;
   text-decoration: none;
   font-weight: 500;
-  padding: 0.3rem 0.5rem; /* espace interne pour respirer */
+ /* padding: 0.3rem 0.5rem;  espace interne pour respirer */
 }
 
 .nav-links a:hover {
