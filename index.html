@@ -3,47 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio - Ingénieur Informatique</title>
+  <title>Ingénieur Chrismy Saintlaurent</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
-<script>
-  const menuToggle = document.getElementById('menu-toggle');
-  const navLinks = document.getElementById('nav-links');
-
-  menuToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('show');
-  });
-</script>
-
-
-
 <body>
-  <!-- Barre de navigation -->
-  <header>
-    <nav class="navbar">
-  <h1 class="logo">Mon Profil</h1>
-  <div class="menu-toggle" id="menu-toggle">
-    ☰
-  </div>
-  <ul class="nav-links" id="nav-links">
-    <li><a href="#accueil">Accueil</a></li>
-    <li><a href="#apropos">À propos</a></li>
-    <li><a href="#competences">Compétences</a></li>
-    <li><a href="#projets">Projets</a></li>
-    <li><a href="#experience">Expérience</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
+    <header class="header">
+    <div class="nav-container">
 
+      <div class="logo">Mon Profil</div>
+
+      <!-- MENU HAMBURGER -->
+      <div class="ligne">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- NAVIGATION -->
+      <nav class="nav-links">
+        <a href="#accueil">Accueil</a>
+        <a href="#apropos">À propos</a>
+        <a href="#competences">Compétences</a>
+        <a href="#projets">Projets</a>
+        <a href="#experience">Expérience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+    </div>
   </header>
 
-  <!-- Section Héro -->
+
+
+  <!-- Section Hero -->
   <section id="accueil" class="hero">
+
     <div class="hero-content">
+              <main class="page-content equipe-section">
+
+    <div class="team-grid">
+
+        <div class="team-member">
+            <img src="asset/image/chrismyyy.jpeg" alt="Membre 1">
+        </div>
+    </div>
+</main>
       <h2>Bonjour, je suis <span>SAINT LAURENT Chrismy</span></h2>
       <p>Ingénieur en Informatique | Spécialiste en Développement Full-Stack</p>
-      <p>"Je conçois et développe des solutions logicielles robustes et scalables."</p>
+      <p>Je conçois et développe des solutions logicielles robustes et scalables.</p>
       <div class="cta">
         <a href="#projets" class="btn">Voir mes projets</a>
         <a href="cv.pdf" class="btn">Télécharger mon CV</a>
@@ -51,8 +59,8 @@
     </div>
   </section>
 
-  <!-- À propos -->
-  <section id="apropos" class="section">
+  <!-- A propos -->
+  <section id="apropos" class="propos">
     <h2>À propos de moi</h2>
     <p>Passionné par l’innovation technologique et la résolution de problèmes complexes, 
        je suis ingénieur en informatique diplômé de Université Chretienne da la Caummunauté de Caiman. 
@@ -72,11 +80,32 @@
 
   <!-- Projets -->
   <section id="projets" class="section">
-    <h2>Projets Phares</h2>
+    <h2 class="op1">Projets Phares</h2>
+
     <div class="projects-grid">
+
       <div class="card">
-        <img src="projet1.png" alt="Projet 1">
-        <h3>Système de Gestion de Données</h3>
+        
+            <div class="founders-grid">
+                      <div class="founder-card">
+                <div class="founder-photo">
+                    <img src="asset/image/chrismyyy.jpeg" alt="Fondatrice UCCC">
+                </div>
+                <h3>Developpement d'une application</h3>
+                <p>Gestion de l'influence Pharma</p>
+            </div>
+
+            <!-- PROJETS -->
+            <div class="founder-card">
+                <div class="founder-photo">
+                    <img src="asset/image/chrismyyy.jpeg" alt="Fondateur UCCC">
+                </div>
+                <h3>Conception de site Web</h3>
+                <p>Pour l'UCCC</p>
+            </div>
+            </div>
+
+        <h3 class="op">Système de Gestion de Données</h3>
         <p>Amélioration des performances de +20% grâce à une architecture optimisée.</p>
         <p><em>Technologies :</em> Python, PostgreSQL</p>
         <a href="#" class="btn">Voir en ligne</a>
@@ -85,7 +114,7 @@
     </div>
   </section>
 
-  <!-- Expérience -->
+  <!-- Experience -->
   <section id="experience" class="section">
     <h2>Expériences</h2>
     <ul class="timeline">
@@ -106,14 +135,31 @@
       <button type="submit">Envoyer</button>
     </form>
     <div class="socials">
-      <a href="#">LinkedIn</a> | <a href="#">GitHub</a> | <a href="mailto:saintlaurentchrismy@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/">LinkedIn</a> | <a href="github.com">GitHub</a> | <a href="mailto:saintlaurentchrismy@gmail.com">Email</a>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer>
+  <footer class="footer">
+
+        <div class="social-links">
+            <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+            <a href="43121035" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+        </div>
     <p>© 2026 SAINT LAURENT Chrismy. Tous droits réservés.</p>
   </footer>
 </body>
-</html>
+<script>
 
+    const menuToggle = document.querySelector('.ligne');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+      menuToggle.classList.toggle('active');
+    });
+
+  </script>
