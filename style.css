@@ -474,42 +474,52 @@ body {
 
 
 
-/* Mode mobile */
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: block; /* affiche le bouton ☰ */
-  }
+/* MOBILE */
 
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    background: #1e1e1e;
-    text-align: center;
-    padding: 1rem 0;
-    animation: fadeIn 0.3s ease-in-out;
-  }
+@media screen and (max-width:768px){
 
-  .nav-links.show {
-    display: flex;
-  }
+    .ligne{
+        display:flex;
+    }
 
-  .nav-links a {
-    padding: 0.8rem;
-    display: block;
-  }
+    .nav-links{
+        display:none;
+        flex-direction:column;
+        position:absolute;
+        top:70px;
+        right:0;
+        width:100%;
+        background:#111;
+        padding:20px 0;
+        text-align:center;
+    }
+
+    .nav-links.show{
+        display:flex;
+    }
+
+    .hero-content h2{
+        font-size:1.4rem;
+    }
+
+    .team-member img{
+        width:170px;
+        height:170px;
+    }
 }
 
-/* Animation fluide */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+/* ANIMATION HAMBURGER */
+
+.ligne.active span:nth-child(1){
+    transform:rotate(45deg) translate(5px,5px);
+}
+
+.ligne.active span:nth-child(2){
+    opacity:0;
+}
+
+.ligne.active span:nth-child(3){
+    transform:rotate(-45deg) translate(7px,-6px);
 }
 
 .footer {
