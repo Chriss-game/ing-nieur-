@@ -7,31 +7,6 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-
-<script>
-emailjs.init("TA_PUBLIC_KEY"); // ← remplace par ta Public Key
-
-document.getElementById("contact-form").addEventListener("submit", function(e) {
-    e.preventDefault();
-
-    emailjs.sendForm(
-        "service_hxo14lm",      // ton Service ID
-        "template_1szqa6m",     // ton Template ID
-        this
-    )
-    .then(() => {
-        alert("Message envoyé avec succès !");
-        this.reset();
-    })
-    .catch((error) => {
-        alert("Erreur lors de l'envoi : " + JSON.stringify(error));
-    });
-});
-</script>
-
-
   
 <body>
 <!-- HEADER -->
@@ -154,17 +129,17 @@ document.getElementById("contact-form").addEventListener("submit", function(e) {
   <!-- Contact -->
   <section id="contact" class="section contact-section">
     <h2>Contact</h2>
-<form id="contact-form">
+<form id="contact-form" class="contact-form" action="https://formsubmit.co/saintlaurentchrismy@gmail.com" method="POST">
 
-  <input type="text" name="nom" placeholder="Nom" required>
+    <input type="text" name="nom" placeholder="Nom" required>
 
-  <input type="email" name="email" placeholder="Email" required>
+    <input type="email" name="email" placeholder="Email" required>
 
-  <input type="text" name="objet" placeholder="Objet" required>
+    <input type="text" name="objet" placeholder="Objet" required>
 
-  <textarea name="message" placeholder="Message" required></textarea>
+    <textarea name="message" placeholder="Message" required></textarea>
 
-  <button type="submit">Envoyer</button>
+    <button type="submit">Envoyer</button>
 
 </form>
     <div class="socials">
@@ -186,6 +161,30 @@ document.getElementById("contact-form").addEventListener("submit", function(e) {
         </div>
     <p>© 2026 SAINT LAURENT Chrismy. Tous droits réservés.</p>
   </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+emailjs.init("Mqb0LDavO9fWmcwo1"); // ← remplace par ta Public Key
+
+document.getElementById("contact-form").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    emailjs.sendForm(
+        "service_hxo14lm",      // ton Service ID
+        "template_1szqa6m",     // ton Template ID
+        this
+    )
+    .then(() => {
+        alert("Message envoyé avec succès !");
+        this.reset();
+    })
+    .catch((error) => {
+        alert("Erreur lors de l'envoi : " + JSON.stringify(error));
+    });
+});
+</script>
 </body>
   <!-- SCRIPT MENU -->
   <script>
